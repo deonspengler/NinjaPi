@@ -14,6 +14,11 @@ difference() {
     translate ([21, -1, 7]) {
         cube ([70,4,26]) ;
     }
+
+    // ethernet
+    translate ([109, 65, 21]) {
+        cube ([4,16,12]) ;
+    }
 }
 
 module roundedcube(xdim,ydim,zdim,rdim){
