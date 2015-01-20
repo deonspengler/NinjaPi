@@ -1,22 +1,22 @@
 //number of fragments
 $fn=64;
 
-difference() {
+difference(){
     // outer shell
     roundedcube(112,86,40,3);
 
     // internal cavity
-    translate ([2, 2, 2]) {
+    translate ([2,2,2]){
         cube ([108,82,40]) ;
     }
 
     // oled window
-    translate ([21, -1, 7]) {
+    translate ([21,-1,7]) {
         cube ([70,4,26]) ;
     }
 
     // ethernet
-    translate ([109, 65, 21]) {
+    translate ([109,65,21]){
         cube ([4,16,12]) ;
     }
 }
