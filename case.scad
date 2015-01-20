@@ -19,6 +19,14 @@ difference(){
     translate ([109,65,21]){
         cube ([4,16,12]) ;
     }
+
+    // usb ports
+    translate([109, 33, 27]){
+        cube ([4,13,6]) ;
+    }
+    translate([109, 49, 27]){
+        cube ([4,13,6]) ;
+    }
 }
 
 module roundedcube(xdim,ydim,zdim,rdim){
