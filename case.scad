@@ -27,6 +27,13 @@ difference(){
     translate([109, 49, 27]){
         cube ([4,13,6]) ;
     }
+
+    // A/V jack
+    translate([78,87,32]){
+        rotate([90,0,0]){
+            cylinder(h=4,r=3);
+        }
+    }
 }
 
 module roundedcube(xdim,ydim,zdim,rdim){
