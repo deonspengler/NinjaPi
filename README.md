@@ -6,6 +6,6 @@ Features include a housing that will hold all electronics (such as the the Raspb
 
 Parts list
 ----------
-1. [Raspberry Pi Model B+](http://www.adafruit.com/products/1914)
-2. [Blue Character OLED 16x2](http://www.adafruit.com/products/823)
-3. [Rubber Bumper Feet](http://www.adafruit.com/products/550)
+* [Raspberry Pi Model B+](http://www.adafruit.com/products/1914)
+* [Blue Character OLED 16x2](http://www.adafruit.com/products/823)
+* [Rubber Bumper Feet](http://www.adafruit.com/products/550)
