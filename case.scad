@@ -34,6 +34,11 @@ difference(){
             cylinder(h=4,r=3);
         }
     }
+
+    // power connector
+    translate([30, 83, 29]){
+        cube ([9,4,4]) ;
+    }
 }
 
 module roundedcube(xdim,ydim,zdim,rdim){
