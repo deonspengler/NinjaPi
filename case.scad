@@ -37,7 +37,19 @@ difference(){
 
     // hdmi
     translate([47, 83,27]){
-        cube([12,4,6]) ;
+        difference(){
+            cube([12,4,6]);
+            translate([-2.1,0,6]){
+                rotate([0,45,0]){
+                    cube([3,4,3]);
+                }
+            }
+            translate([9.9,0,6]){
+                rotate([0,45,0]){
+                    cube([3,4,3]);
+                }
+            }
+        }
     }
 
     // power connector
