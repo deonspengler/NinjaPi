@@ -8,5 +8,5 @@ Parts list
 ----------
 * [Raspberry Pi Model B+](http://www.adafruit.com/products/1914)
 * [Blue Character OLED 16x2](http://www.adafruit.com/products/823)
-* [DS1307 Real Time Clock1](https://www.adafruit.com/product/264)
+* [DS1307 Real Time Clock](https://www.adafruit.com/product/264)
 * [Rubber Bumper Feet](http://www.adafruit.com/products/550)
