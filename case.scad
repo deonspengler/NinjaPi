@@ -6,26 +6,26 @@ difference(){
     roundedcube(112,86,40,3);
 
     // internal cavity
-    translate ([2,2,2]){
-        cube ([108,82,40]) ;
+    translate([2,2,2]){
+        cube([108,82,40]);
     }
 
     // oled window
-    translate ([21,-1,7]) {
-        cube ([70,4,26]) ;
+    translate([21,-1,7]){
+        cube([70,4,26]);
     }
 
     // ethernet
-    translate ([109,65,21]){
-        cube ([4,16,12]) ;
+    translate([109,65,21]){
+        cube([4,16,12]) ;
     }
 
     // usb ports
-    translate([109, 33, 27]){
-        cube ([4,13,6]) ;
+    translate([109,33,27]){
+        cube([4,13,6]);
     }
-    translate([109, 49, 27]){
-        cube ([4,13,6]) ;
+    translate([109,49,27]){
+        cube([4,13,6]);
     }
 
     // A/V jack
@@ -37,12 +37,12 @@ difference(){
 
     // hdmi
     translate([47, 83,27]){
-        cube ([12,4,6]) ;
+        cube([12,4,6]) ;
     }
 
     // power connector
     translate([30, 83, 29]){
-        cube ([9,4,4]) ;
+        cube([9,4,4]) ;
     }
 }
 
