@@ -3,7 +3,7 @@ $fn=64;
 
 difference(){
     // outer shell
-    roundedcube(112,86,40,3);
+    roundedcube(112,86,40,4);
 
     // internal cavity
     translate([2,2,2]){
