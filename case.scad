@@ -3,48 +3,48 @@ $fn=64;
 
 difference(){
     // outer shell
-    roundedcube(112,86,40,4);
+    roundedcube(112.50,85,40,4);
 
     // internal cavity
     translate([2,2,2]){
-        cube([108,82,40]);
+        cube([108.5,81,40]);
     }
 
     // oled window
-    translate([21,-1,7]){
-        cube([70,4,26]);
+    translate([20.75,-1,6.50]){
+        cube([71,4,27]);
     }
 
     // ethernet
-    translate([109,65,21]){
+    translate([109,64,22]){
         cube([4,16,12]) ;
     }
 
     // usb ports
-    translate([109,33,27]){
-        cube([4,13,6]);
+    translate([109,29,28]){
+        cube([4,15,6]);
     }
-    translate([109,49,27]){
-        cube([4,13,6]);
+    translate([109,46,28]){
+        cube([4,15,6]);
     }
 
     // A/V jack
-    translate([78,87,30]){
+    translate([76,86,31]){
         rotate([90,0,0]){
             cylinder(h=4,r=3);
         }
     }
 
     // hdmi
-    translate([47, 83,27]){
+    translate([45.50,82,28]){
         difference(){
-            cube([12,4,6]);
-            translate([-2.1,0,6]){
+            cube([16,4,6]);
+            translate([-2.10,0,6]){
                 rotate([0,45,0]){
                     cube([3,4,3]);
                 }
             }
-            translate([9.9,0,6]){
+            translate([13.8,0,6]){
                 rotate([0,45,0]){
                     cube([3,4,3]);
                 }
@@ -53,7 +53,7 @@ difference(){
     }
 
     // power connector
-    translate([30, 83, 29]){
+    translate([28, 82, 30]){
         cube([9,4,4]) ;
     }
 }
