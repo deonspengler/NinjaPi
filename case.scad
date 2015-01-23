@@ -36,15 +36,15 @@ difference(){
     }
 
     // hdmi
-    translate([45.50,82,28]){
+    translate([46.50,82,28]){
         difference(){
-            cube([16,4,6]);
-            translate([-2.10,0,6]){
+            cube([16,4,6.50]);
+            translate([-2.10,0,6.50]){
                 rotate([0,45,0]){
                     cube([3,4,3]);
                 }
             }
-            translate([13.8,0,6]){
+            translate([13.8,0,6.50]){
                 rotate([0,45,0]){
                     cube([3,4,3]);
                 }
