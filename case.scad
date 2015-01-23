@@ -29,9 +29,9 @@ difference(){
     }
 
     // A/V jack
-    translate([76,86,31]){
+    translate([76.50,86,31]){
         rotate([90,0,0]){
-            cylinder(h=4,r=3);
+            cylinder(h=4,r=3.50);
         }
     }
 
