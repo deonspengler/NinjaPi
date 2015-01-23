@@ -53,8 +53,8 @@ difference(){
     }
 
     // power connector
-    translate([28,82,30]){
-        cube([9,4,4]) ;
+    translate([28.25,82,30]){
+        cube([9.50,4,4]) ;
     }
 }
 
