@@ -59,12 +59,18 @@ difference(){
 }
 
 // oled breakaway
-breakaway(20.75,0,6.5,0.2,2,27,17);
+breakaway(20.75,0,6.5,0.2,2,27,4,17);
 
-module breakaway(xpos,ypos,zpos,xdim,ydim,zdim,count){
+// power breakaway
+breakaway(28.25,83,30,0.2,2,4,3,2);
+
+// hdmi breakaway
+breakaway(46.50,83,28,0.2,2,6.50,3.1,4);
+
+module breakaway(xpos,ypos,zpos,xdim,ydim,zdim,step,count){
     for(i=[1:count]){
-        translate([xpos+(i*4),ypos,zpos]){
-            cube([xdim,ydim,zdim]);
+        translate([xpos+(i*step),ypos,zpos]){
+            #cube([xdim,ydim,zdim]);
         }
     }
 }
