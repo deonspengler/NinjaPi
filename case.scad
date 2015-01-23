@@ -53,8 +53,19 @@ difference(){
     }
 
     // power connector
-    translate([28, 82, 30]){
+    translate([28,82,30]){
         cube([9,4,4]) ;
+    }
+}
+
+// oled breakaway
+breakaway(20.75,0,6.5,0.2,2,27,17);
+
+module breakaway(xpos,ypos,zpos,xdim,ydim,zdim,count){
+    for(i=[1:count]){
+        translate([xpos+(i*4),ypos,zpos]){
+            cube([xdim,ydim,zdim]);
+        }
     }
 }
 
