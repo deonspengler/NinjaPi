@@ -58,32 +58,6 @@ difference(){
     }
 }
 
-module breakaways(){
-    // oled breakaway
-    breakaway(20.75,0,6.5,0.2,2,27,4,0,17);
-
-    // power breakaway
-    breakaway(28.25,83,30,0.2,2,4,3,0,2);
-
-    // hdmi breakaway
-    breakaway(46.50,83,28,0.2,2,6.50,3.1,0,4);
-
-    // eathernet breakaway
-    breakaway(110.50,64,22,2,0.2,12,0,4,3);
-
-    // usb breakaway
-    breakaway(110.50,28,27.50,2,0.2,6.50,0,3.8,3);
-    breakaway(110.50,46,27.50,2,0.2,6.50,0,3.8,3);
-
-    module breakaway(xpos,ypos,zpos,xdim,ydim,zdim,xstep,ystep,count){
-        for(i=[1:count]){
-            translate([xpos+(i*xstep),ypos+(i*ystep),zpos]){
-                cube([xdim,ydim,zdim]);
-            }
-        }
-    }
-}
-
 module roundedcube(xdim,ydim,zdim,rdim){
     hull(){
         translate([rdim,rdim,0])cylinder(r=rdim,h=zdim);
