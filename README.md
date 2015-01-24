@@ -1,6 +1,6 @@
 New Name Here
 =============
-The aim of this project is to create a sleek and compact system to showcase what can be achieved with a [Raspberry Pi](http://www.raspberrypi.org/) and an OpenSource [RepRap 3D printer](http://reprap.org/).
+The aim of this project is to create a sleek and compact system to showcase what can be achieved with a [Raspberry Pi](http://www.raspberrypi.org/) and an OpenSource [RepRap 3D Printer](http://reprap.org/).
 
 It can be used as a media center using [KODI](http://kodi.tv), a retro gamming console using [RetroArch](http://www.libretro.com/), a music hub using [MPD](http://www.musicpd.org/) and so much more.
 
