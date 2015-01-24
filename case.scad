@@ -21,7 +21,7 @@ difference(){
     }
 
     // usb ports
-    translate([109,28,27.50]){
+    translate([109,27.50,27.50]){
         cube([4,15,6.50]);
     }
     translate([109,46,27.50]){
@@ -31,7 +31,7 @@ difference(){
     // A/V jack
     translate([76.50,86,31]){
         rotate([90,0,0]){
-            cylinder(h=4,r=3.50);
+            cylinder(h=4,r=3);
         }
     }
 
@@ -53,31 +53,33 @@ difference(){
     }
 
     // power connector
-    translate([28.25,82,30]){
-        cube([9.50,4,4]) ;
+    translate([28.25,82,31]){
+        cube([9.50,4,3.5]) ;
     }
 }
 
-// oled breakaway
-breakaway(20.75,0,6.5,0.2,2,27,4,0,17);
+module breakaways(){
+    // oled breakaway
+    breakaway(20.75,0,6.5,0.2,2,27,4,0,17);
 
-// power breakaway
-breakaway(28.25,83,30,0.2,2,4,3,0,2);
+    // power breakaway
+    breakaway(28.25,83,30,0.2,2,4,3,0,2);
 
-// hdmi breakaway
-breakaway(46.50,83,28,0.2,2,6.50,3.1,0,4);
+    // hdmi breakaway
+    breakaway(46.50,83,28,0.2,2,6.50,3.1,0,4);
 
-// eathernet breakaway
-breakaway(110.50,64,22,2,0.2,12,0,4,3);
+    // eathernet breakaway
+    breakaway(110.50,64,22,2,0.2,12,0,4,3);
 
-// usb breakaway
-breakaway(110.50,28,27.50,2,0.2,6.50,0,3.8,3);
-breakaway(110.50,46,27.50,2,0.2,6.50,0,3.8,3);
+    // usb breakaway
+    breakaway(110.50,28,27.50,2,0.2,6.50,0,3.8,3);
+    breakaway(110.50,46,27.50,2,0.2,6.50,0,3.8,3);
 
-module breakaway(xpos,ypos,zpos,xdim,ydim,zdim,xstep,ystep,count){
-    for(i=[1:count]){
-        translate([xpos+(i*xstep),ypos+(i*ystep),zpos]){
-            cube([xdim,ydim,zdim]);
+    module breakaway(xpos,ypos,zpos,xdim,ydim,zdim,xstep,ystep,count){
+        for(i=[1:count]){
+            translate([xpos+(i*xstep),ypos+(i*ystep),zpos]){
+                cube([xdim,ydim,zdim]);
+            }
         }
     }
 }
