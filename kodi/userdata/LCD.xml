@@ -30,8 +30,4 @@
     <screensaver>
       <line>$INFO[LCD.TimeWide21]</line>
     </screensaver>
-    <xbelaunch>
-      <line>Playing</line>
-      <line>$INFO[System.LaunchXBE]</line>
-    </xbelaunch>
 </lcd>
