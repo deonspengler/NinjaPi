@@ -1,0 +1,10 @@
+[Unit]
+Description=RTC clock
+Before=network.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/setrtc
+
+[Install]
+WantedBy=multi-user.target
