@@ -1,6 +1,3 @@
-//number of fragments
-$fn=20;
-
 difference() {
     cube([117,80,2]);
 
