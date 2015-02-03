@@ -21,11 +21,11 @@ difference(){
     }
 
     // usb ports
-    translate([119,27.50,28.50]){
-        cube([4,15,6.50]);
+    translate([119,27.50,27.5]){
+        cube([4,15,7]);
     }
-    translate([119,46,28.50]){
-        cube([4,15,6.50]);
+    translate([119,46,27.5]){
+        cube([4,15,7]);
     }
 
     // A/V jack
