@@ -1,4 +1,5 @@
 difference() {
+    // base
     cube([117,80,2]);
 
     // air vents
@@ -9,6 +10,22 @@ difference() {
     }
 }
 
+// center spine
 translate([0,35.25,0]){
     cube([108.50,10,2]);
+}
+
+// side wall
+translate([0,21,0]){
+    cube([87,3,7]);
+}
+
+// back wall left
+translate([87,21,0]){
+    cube([3,24,7]);
+}
+
+// back wall right
+translate([87,58,0]){
+    cube([3,22,7]);
 }
