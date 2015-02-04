@@ -17,15 +17,20 @@ translate([0,35.25,0]){
 
 // side wall
 translate([0,21,0]){
-    cube([87,3,7]);
+    cube([88,3,8]);
 }
 
 // back wall left
-translate([87,21,0]){
-    cube([3,24,7]);
+translate([88,21,0]){
+    cube([3,14,8]);
 }
 
 // back wall right
-translate([87,58,0]){
-    cube([3,22,7]);
+translate([88,60,0]){
+    cube([3,20,8]);
+}
+
+//oled wall
+translate([45,5,0]){
+    cube([10,3,18]);
 }
